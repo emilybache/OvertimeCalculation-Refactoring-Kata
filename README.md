@@ -9,5 +9,5 @@ You need to add a new feature, described below. Before that you may want to add 
 New Feature  
 ------------
 
-The threshold for overtime hours at rate 2 should be changed from 6 to 8 if the assignment is unionized and the briefing is foreign.
+The threshold for overtime hours at rate 2 should be changed from 6 to 4 if the assignment is unionized and the briefing is foreign.
 
