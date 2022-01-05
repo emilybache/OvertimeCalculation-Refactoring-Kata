@@ -1,3 +1,0 @@
--module('Starter').
-
--export([]).
