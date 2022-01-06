@@ -1,0 +1,11 @@
+# Project files
+.gradle/
+.idea/
+build/
+out/
+
+# macOS
+.DS_Store
+
+# Approvals
+*.received.*
