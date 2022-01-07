@@ -31,10 +31,10 @@ object CompensationCalculator {
     return Overtime(hoursOvertimeRate1, hoursOvertimeRate2)
   }
 
-  private fun calculateThreshold(listEntry: Assignment, threshold: Long): BigDecimal {
-    val remainder: Duration = listEntry.duration.minusHours(threshold)
+  private fun calculateThreshold(assignment: Assignment, threshold: Long): BigDecimal {
+    val remainder: Duration = assignment.duration.minusHours(threshold)
     return if (remainder.isNegative) {
-      BigDecimal.valueOf(listEntry.duration.toSeconds() / 3600)
+      BigDecimal.valueOf(assignment.duration.toSeconds() / 3600)
     } else {
       BigDecimal.valueOf(threshold)
     }
