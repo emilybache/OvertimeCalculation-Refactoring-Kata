@@ -41,10 +41,10 @@ public class CompensationCalculator {
         return new Overtime(hoursOvertimeRate1, hoursOvertimeRate2);
     }
 
-    private static BigDecimal calculateThreshold(Assignment listEntry, long threshold) {
-        Duration remainder = listEntry.duration().minusHours(threshold);
+    private static BigDecimal calculateThreshold(Assignment assignment, long threshold) {
+        Duration remainder = assignment.duration().minusHours(threshold);
         if (remainder.isNegative()) {
-            return BigDecimal.valueOf(listEntry.duration().toSeconds()/3600);
+            return BigDecimal.valueOf(assignment.duration().toSeconds()/3600);
         }
         return  BigDecimal.valueOf(threshold);
     }
